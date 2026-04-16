@@ -195,10 +195,11 @@ a:hover {
 }
 
 .gh-icon {
-  width: 0.95em;
-  height: 0.95em;
-  vertical-align: -0.15em;
-  margin-left: 0.3em;
+  width: 0.75em;
+  height: 0.75em;
+  vertical-align: -0.05em;
+  margin-left: 0.25em;
+  display: inline;
 }
 
 ul {
