@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Raspberrarium Build Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A step-by-step guide to building a small-scale terrarium with a Raspberry Pi lighting system that simulates the day/night cycle and moon phases.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main class="container">
+
+    <!-- Hero -->
+    <header class="hero">
+      <p class="eyebrow">Build Guide 🫙 🌱</p>
+      <h1><span class="brand-red">RASPBER</span><span class="brand-green">RARIUM</span></h1>
+
+      <!-- Brand -->
+      <div class="brand-header">
+        <img src="images/raspberry.jpg" alt="Raspberry logo" class="brand-logo">
+        <span class="brand-plus">+</span>
+        <span class="brand-name">MOTHER<br>NATURE</span>
+      </div>
+
+      <p class="subtitle">
+        A tiny self-contained terrarium paired with a Raspberry Pi lighting system
+        that simulates a full day/night cycle and the phases of the&nbsp;moon.
+      </p>
+      <div class="hero-image">
+        <img src="images/hero-image.jpg" alt="The finished Raspberrarium">
+        <p class="caption">The finished Raspberrarium: a sealed jar ecosystem lit from above.</p>
+      </div>
+    </header>
+
+    <!-- Disclaimer -->
+    <section class="disclaimer">
+      <p>
+        Everything in this build came from things I had around me. You don't
+        need the exact jar, the exact materials, or anything you see in this
+        tutorial or any other tutorial online. Use whatever you already have,
+        and let your creativity guide you. Don't feel stuck: the best terrariums
+        come from a bit of resourcefulness, not a shopping list.
+      </p>
+      <div class="disclaimer-grid">
+        <div class="disclaimer-item">
+          <img src="images/branch_di.jpg" alt="A fallen branch">
+          <p class="caption">A branch (best with moss on it)</p>
+        </div>
+        <div class="disclaimer-item">
+          <img src="images/containers_di.jpg" alt="Spare containers">
+          <p class="caption">Containers</p>
+        </div>
+        <div class="disclaimer-item">
+          <img src="images/leaves_di.jpg" alt="Leaves, branches, and tiny insects">
+          <p class="caption">Leaves, branches, tiny insects</p>
+        </div>
+        <div class="disclaimer-item">
+          <img src="images/plants_di.jpg" alt="Small plants">
+          <p class="caption">Plants</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section>
+      <h2>Overview</h2>
+      <p>
+        This guide walks through how to assemble the physical terrarium, from the
+        layered substrate at the bottom of the jar to the lid that houses the
+        lighting, ventilation, and watering points on top.
+      </p>
+      <p>
+        The electronics and software are covered in the
+        <a href="https://github.com/mommotti/raspberrarium" target="_blank" rel="noopener">
+          Raspberrarium code repository►</a>. Here we focus only on the build itself.
+      </p>
+    </section>
+
+    <!-- Materials -->
+    <section>
+      <h2>Materials</h2>
+      <div class="image-block">
+        <img src="images/jar.jpg" alt="The jar used for the build">
+        <p class="caption">The jar used for this build.</p>
+      </div>
+      <ul>
+        <li>A small glass jar (the example uses one 8&nbsp;cm (3.15&nbsp;in) wide × 13&nbsp;cm (5.1&nbsp;in) tall)</li>
+        <li>Gravel, tree bark, crushed charcoal, sand, ash, dirt, and soil</li>
+        <li>A small piece of translucent plastic (used as a light diffuser)</li>
+        <li>A thin piece of breathable fabric (polyester is better)</li>
+        <li>Super glue and a syringe<span class="asterisk">*</span> for watering</li>
+      </ul>
+
+      <p>
+        On top of the physical build, the terrarium is lit by a small
+        Raspberry Pi setup that runs the day/night and moon-phase cycle. The
+        wiring, code, and setup instructions for that part live in the
+        <a href="https://github.com/mommotti/raspberrarium" target="_blank" rel="noopener">
+          Raspberrarium code repository►</a>. For the electronics you'll need:
+      </p>
+      <ul>
+        <li>Two WS2812 LEDs (or a short LED strip)</li>
+        <li>A Raspberry Pi and jumper wires</li>
+      </ul>
+
+      <p class="note">
+        <span class="asterisk">*</span> The syringe isn't the only option. Another approach is to fit a thin
+        transparent tube through the lid and seal it in place, so water can be
+        poured directly into the tube. Adding a small piece of mesh or a grid
+        at the outer end helps keep insects from crawling in or out. Use
+        whichever method suits you best, and in either case try to avoid
+        watering directly onto the leaves or letting any water reach the LEDs.
+      </p>
+    </section>
+
+    <!-- Base Layers -->
+    <section>
+      <h2>Base Layers</h2>
+      <p>
+        The base of the terrarium is built up in several layers. Each one has a
+        role in drainage, filtration, or supporting plant life, and together they
+        create a small but self-sustaining foundation.
+      </p>
+      <p>
+        As you add each layer, gently tamp it down with a spoon or any small
+        flat tool to compact it evenly. This keeps the layers stable, prevents
+        pockets of air, and helps the whole base settle properly before the
+        next one goes on top.
+      </p>
+
+      <h3>The layers</h3>
+      <div class="grid">
+        <div class="grid-item">
+          <div class="grid-item-image">
+            <img src="images/gravel.jpg" alt="Gravel">
+            <span class="grid-number">1</span>
+          </div>
+          <p class="caption">Gravel: drainage layer at the very bottom.</p>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item-image">
+            <img src="images/bark.jpg" alt="Tree bark">
+            <span class="grid-number">2</span>
+          </div>
+          <p class="caption">Tree bark: adds structure and holds moisture.</p>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item-image">
+            <img src="images/coal.jpg" alt="Crushed charcoal">
+            <span class="grid-number">3</span>
+          </div>
+          <p class="caption">Crushed charcoal: filters the water and keeps things fresh.</p>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item-image">
+            <img src="images/ash-sand.jpg" alt="Sand and ash">
+            <span class="grid-number">4</span>
+          </div>
+          <p class="caption">Sand and ash: a fine barrier between the lower and upper layers.</p>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item-image">
+            <img src="images/soil.jpg" alt="Dirt">
+            <span class="grid-number">5</span>
+          </div>
+          <p class="caption">Dirt: a middle layer with some organic content.</p>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item-image">
+            <img src="images/soil-plants.jpg" alt="Soil">
+            <span class="grid-number">6</span>
+          </div>
+          <p class="caption">Soil: the top layer, where the plants are rooted.</p>
+        </div>
+      </div>
+
+      <h3>Side view of the layers</h3>
+      <div class="image-block">
+        <img src="images/layers.jpg" alt="Side view of the jar showing the layers">
+        <p class="caption">A side view of the finished base shows each layer clearly through the glass.</p>
+      </div>
+    </section>
+
+    <!-- Lid, Lighting, Ventilation -->
+    <section>
+      <h2>Lid, Lighting &amp; Ventilation</h2>
+      <p>
+        The lid does a lot of work in this build. It holds the lighting, allows
+        air to move, and gives you a way to water the terrarium without opening
+        it again once it's sealed.
+      </p>
+
+      <div class="image-block">
+        <img src="images/lid-holes-led-configuration.jpg" alt="The jar lid with holes and LED configuration">
+        <p class="caption">The lid has eight small holes drilled through it.</p>
+      </div>
+
+      <p>
+        Seven of those holes are used for ventilation and for adding water. The
+        eighth hole is larger, and is used to feed the LED strip cables through
+        the top of the lid. Once the cables are in place, a small drop of super
+        glue seals the hole so the enclosure stays airtight. A small square of
+        translucent plastic is also glued in front of the LEDs as a light
+        diffuser: without it the LEDs look harsh and pinpoint, but the diffuser
+        spreads the light evenly so the inside of the jar feels lit by a soft,
+        ambient source rather than two bright dots.
+      </p>
+
+      <div class="image-block">
+        <img src="images/polyester-fabric.jpg" alt="Polyester fabric layer">
+        <p class="caption">A thin layer of breathable fabric is placed under the lid before sealing.</p>
+      </div>
+
+      <p>
+        Before closing the jar for good, a thin layer of fabric is laid across
+        the opening. This lets humid air and excess moisture slowly escape
+        through the tiny holes in the lid, which keeps the terrarium from rotting
+        while still staying mostly closed. Once the lid is screwed on, any
+        excess fabric sticking out around the rim can be trimmed off with
+        scissors for a cleaner finish.
+      </p>
+
+      <div class="image-block">
+        <img src="images/syringe.jpg" alt="Watering with a syringe">
+        <p class="caption">Water is added through the small holes in the lid with a syringe.</p>
+      </div>
+
+      <p>
+        Once sealed, the terrarium almost takes care of itself. When it does
+        need a small top-up, a syringe slides through one of the tiny holes in
+        the lid, so the jar can be watered without ever being reopened.
+      </p>
+    </section>
+
+    <!-- Lighting Concept -->
+    <section>
+      <h2>Lighting Concept</h2>
+      <div class="image-block">
+        <img src="images/demo_day_night.gif" alt="Demo of the day and night light cycle">
+        <p class="caption">Sunrise, daylight, sunset, and night, all simulated by two LEDs.</p>
+      </div>
+      <p>
+        The lighting system uses just two LEDs, but the effect is surprisingly
+        convincing. A 24-hour cycle is divided into 96 steps (one every 15
+        minutes), which lets the color and brightness drift smoothly from
+        sunrise, through midday, into sunset, and then through the night. The
+        GIF above is a sped-up demo made from a shortened version of the code
+        for illustration; the real code runs the full 96-step cycle over 24
+        hours.
+      </p>
+      <div class="image-block">
+        <img src="images/demo_moon_phase.gif" alt="Demo of the moon phase simulation">
+        <p class="caption">The moon phases are approximated by balancing the brightness of the left and right LEDs.</p>
+      </div>
+      <p>
+        At night, the two LEDs simulate the phases of the moon. A full moon
+        lights both sides evenly; a waxing moon is brighter on the right, a
+        waning moon brighter on the left, and a new moon goes dark. It's
+        intentionally simplified: with only two LEDs the goal isn't astronomical
+        accuracy, just a clean, readable visual effect for a very small space.
+        This GIF is also a sped-up demo; in the actual build each phase lasts
+        around a week, following the real lunar cycle.
+      </p>
+      <div class="image-block">
+        <img src="images/moon_hemispheres.jpg" alt="Moon phases in the northern and southern hemispheres">
+        <p class="caption">
+          Moon phases as seen from the northern and southern hemispheres.
+          Source: <a href="https://www.open.edu/openlearn/mod/oucontent/view.php?id=95866&amp;section=_unit2.3.11" target="_blank" rel="noopener">The Open University</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        The electronics, the 96-step cycle, and the moon-phase logic all live in
+        the <a href="https://github.com/mommotti/raspberrarium" target="_blank" rel="noopener">Raspberrarium&nbsp;code&nbsp;repository►</a>.
+      </p>
+
+      <div class="donate">
+        <p>
+          If you enjoyed this little project and would like to support future
+          builds, a small donation is always appreciated. 🌱💚
+        </p>
+        <a class="donate-button" href="https://paypal.me/mommotti" target="_blank" rel="noopener">
+          Donate via PayPal
+        </a>
+      </div>
+
+      <p class="muted">Have fun! 🌱💚/(^o^)/🫙🌱</p>
+
+      <hr class="footer-sep">
+
+      <p class="credit">
+        made with ♡ by
+        <a href="https://github.com/mommotti/raspberrarium" target="_blank" rel="noopener">mommotti</a>
+      </p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
