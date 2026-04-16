@@ -33,26 +33,10 @@ body {
   margin: 20px 0 28px;
 }
 
-.brand-logo {
-  width: 42px;
-  height: 42px;
+.brand-lockup {
+  height: 56px;
+  width: auto;
   object-fit: contain;
-}
-
-.brand-plus {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #888;
-  line-height: 1;
-}
-
-.brand-name {
-  font-size: 0.85rem;
-  letter-spacing: 0.22em;
-  font-weight: 700;
-  color: #2a7a4c;
-  text-align: center;
-  line-height: 1.2;
 }
 
 /* --- Hero --- */ 
