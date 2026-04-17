@@ -183,12 +183,11 @@ a:hover {
 }
 
 .gh-icon {
-  width: 0.75em;
-  height: 0.75em;
-  vertical-align: -0.05em;
+  width: 0.85em;
+  height: 0.85em;
+  vertical-align: -0.08em;
   margin-left: 0.25em;
   display: inline;
-  filter: invert(1);
 }
 
 ul {
