@@ -246,12 +246,12 @@
       </div>
       <p>
         The lighting system uses just two LEDs, but the effect is surprisingly
-        convincing. A 24-hour cycle is divided into 96 steps (one every 15
-        minutes), which lets the color and brightness drift smoothly from
+        convincing. The color and brightness are calculated in real time,
+        accurate to the minute, which lets the light drift smoothly from
         sunrise, through midday, into sunset, and then through the night. The
         GIF above is a sped-up demo made from a shortened version of the code
-        for illustration; the real code runs the full 96-step cycle over 24
-        hours.
+        for illustration; the real code runs a continuous minute-accurate
+        cycle over 24 hours.
       </p>
       <div class="image-block">
         <img src="images/demo_moon_phase.gif" alt="Demo of the moon phase simulation">
@@ -282,7 +282,7 @@
       <p>
         The clip above shows the demo script cycling through every phase of the
         day on the actual LEDs inside the terrarium. The full source code,
-        including the demo scripts and the 96-step lighting engine, is available
+        including the demo scripts and the lighting engine, is available
         in the <a href="https://github.com/mommotti/raspberrarium" target="_blank" rel="noopener"><strong>Raspberrarium&nbsp;code&nbsp;repository</strong>&nbsp;<img src="images/github-icon.svg" alt="" class="gh-icon"></a>.
       </p>
     </section>
@@ -290,7 +290,7 @@
     <!-- Footer -->
     <footer>
       <p>
-        The electronics, the 96-step cycle, and the moon-phase logic all live in
+        The electronics, the lighting engine, and the moon-phase logic all live in
         the <a href="https://github.com/mommotti/raspberrarium" target="_blank" rel="noopener"><strong>Raspberrarium&nbsp;code&nbsp;repository</strong>&nbsp;<img src="images/github-icon.svg" alt="" class="gh-icon"></a>.
       </p>
 
